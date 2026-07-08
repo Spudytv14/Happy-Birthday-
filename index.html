@@ -619,8 +619,6 @@
         }
 
         /* ===== PRICING ===== */
-  
-
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -1116,8 +1114,7 @@
             transform: scale(1.05);
             box-shadow: 0 5px 20px rgba(255, 215, 0, .3);
         }
-  
-        
+
         /* ===== FORMS ===== */
         .contact-form .form-group {
             margin-bottom: 1.2rem;
@@ -1641,3 +1638,873 @@
     </section>
 
     <!-- ===== TOOLS ===== -->
+    <section class="tools-section" id="tools">
+        <div class="section-header reveal">
+            <div class="section-tag">Capabilities</div>
+            <h2 class="section-title">20+ AI Tools at Your Fingertips</h2>
+            <p class="section-desc">From content creation to code generation, everything you need in one platform.</p>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card reveal reveal-delay-1" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Video Generator','🎬','Create stunning cinematic videos from simple text descriptions. Our AI understands African landscapes, wildlife, and cultural contexts to produce authentic visuals.')">
+                <div class="tool-icon">🎬</div><h4>Video Generator</h4><p>Create cinematic videos from text prompts</p>
+            </div>
+            <div class="tool-card reveal reveal-delay-1" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Image Studio','🎨','Generate photorealistic images, edit photos, and create digital art. Supports African skin tones, traditional patterns, and local scenery with exceptional accuracy.')">
+                <div class="tool-icon">🎨</div><h4>Image Studio</h4><p>Generate stunning images and edit photos</p>
+            </div>
+            <div class="tool-card reveal reveal-delay-2" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Music Lab','🎵','Compose original Afrobeat, Amapiano, Highlife, and more. Our AI understands African rhythms, instruments, and scales to create authentic sounding tracks.')">
+                <div class="tool-icon">🎵</div><h4>Music Lab</h4><p>Compose original music and soundtracks</p>
+            </div>
+            <div class="tool-card reveal reveal-delay-2" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Code Pilot','💻','Write, debug, and optimize code in Python, JavaScript, React, and more. Includes African payment gateway integrations, local API wrappers, and Swahili code comments.')">
+                <div class="tool-icon">💻</div><h4>Code Pilot</h4><p>Write, debug, and optimize code instantly</p>
+            </div>
+            <div class="tool-card reveal reveal-delay-3" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Voice Clone','🎙️','Replicate voices with high fidelity in 50+ African languages including Swahili, Yoruba, Zulu, Amharic, and Arabic. Perfect for dubbing and accessibility.')">
+                <div class="tool-icon">🎙️</div><h4>Voice Clone</h4><p>Replicate voices with high fidelity</p>
+            </div>
+            <div class="tool-card reveal reveal-delay-3" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('App Forge','📱','Build mobile and web applications with AI-generated code. Includes pre-built templates for e-commerce, fintech, and social platforms popular in Africa.')">
+                <div class="tool-icon">📱</div><h4>App Forge</h4><p>Build mobile and web applications</p>
+            </div>
+            <div class="tool-card reveal" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Data Analyst','📊','Transform raw data into actionable insights. Upload CSVs, connect databases, and get AI-generated reports with visualizations tailored to your business.')">
+                <div class="tool-icon">📊</div><h4>Data Analyst</h4><p>Transform raw data into insights</p>
+            </div>
+            <div class="tool-card reveal" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Content Writer','✍️','Generate blogs, ads, social media posts, and marketing copy in English, French, Arabic, Swahili, and more. Understands local slang and cultural references.')">
+                <div class="tool-icon">✍️</div><h4>Content Writer</h4><p>Generate blogs, ads, and copy</p>
+            </div>
+            <div class="tool-card reveal" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Logo Maker','🎯','Design professional brand identities and logos. Includes African-inspired design elements, color palettes, and typography recommendations.')">
+                <div class="tool-icon">🎯</div><h4>Logo Maker</h4><p>Design professional brand identities</p>
+            </div>
+            <div class="tool-card reveal" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Code Reviewer','🔍','AI-powered code quality analysis. Detects security vulnerabilities, performance issues, and suggests best practices for scalable African tech stacks.')">
+                <div class="tool-icon">🔍</div><h4>Code Reviewer</h4><p>AI-powered code quality analysis</p>
+            </div>
+            <div class="tool-card reveal" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('Text to Speech','🔊','Natural voice synthesis in 50+ languages with authentic African accents. Supports Nigerian Pidgin, Ghanaian Twi, and South African accents.')">
+                <div class="tool-icon">🔊</div><h4>Text to Speech</h4><p>Natural voice synthesis in 50+ languages</p>
+            </div>
+            <div class="tool-card reveal" onmousemove="handleToolHover(event,this)" onmouseleave="resetToolHover(this)" onclick="openToolModal('AI Chatbot','💬','Intelligent conversational agents trained on African business contexts. Handle customer support, sales, and FAQs in local languages.')">
+                <div class="tool-icon">💬</div><h4>AI Chatbot</h4><p>Intelligent conversational agents</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section id="pricing">
+        <div class="section-header reveal">
+            <div class="section-tag">Pricing</div>
+            <h2 class="section-title">Choose Your Plan</h2>
+            <p class="section-desc">Start free and scale as you grow. No hidden fees.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card reveal reveal-delay-1">
+                <h3>Starter</h3>
+                <div class="price">$0<span>/month</span></div>
+                <ul class="pricing-features">
+                    <li>5 AI generations/day</li><li>Basic video & image tools</li><li>Community support</li><li>Standard resolution</li><li>Watermarked exports</li>
+                </ul>
+                <button class="pricing-btn" onclick="openModal('signup')">Get Started Free</button>
+            </div>
+            <div class="pricing-card featured reveal reveal-delay-2">
+                <div class="pricing-badge">Most Popular</div>
+                <h3>Creator</h3>
+                <div class="price">$19<span>/month</span></div>
+                <ul class="pricing-features">
+                    <li>Unlimited AI generations</li><li>All 20+ AI tools</li><li>Priority support</li><li>4K resolution exports</li><li>No watermarks</li><li>API access</li>
+                </ul>
+                <button class="pricing-btn" onclick="openModal('signup')">Start Creating</button>
+            </div>
+            <div class="pricing-card reveal reveal-delay-3">
+                <h3>Enterprise</h3>
+                <div class="price">$49<span>/month</span></div>
+                <ul class="pricing-features">
+                    <li>Everything in Creator</li><li>Custom AI model training</li><li>Dedicated account manager</li><li>Team collaboration</li><li>SSO & advanced security</li><li>White-label options</li>
+                </ul>
+                <button class="pricing-btn" onclick="openModal('contact')">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="reviews-section" id="reviews">
+        <div class="section-header reveal">
+            <div class="section-tag">Testimonials</div>
+            <h2 class="section-title">Loved by Creators Across Africa</h2>
+        </div>
+        <div class="reviews-track" id="reviewsTrack">
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Spudy transformed my content creation workflow. I can generate professional videos in minutes that used to take days. Truly revolutionary for African creators."</p><div class="reviewer"><div class="reviewer-avatar">AK</div><div class="reviewer-info"><h5>Amina K.</h5><span>Content Creator, Nigeria</span></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The code generation tools are incredibly accurate. As a startup founder in Kenya, Spudy has cut our development time by 60%. Game changer."</p><div class="reviewer"><div class="reviewer-avatar">DM</div><div class="reviewer-info"><h5>David M.</h5><span>Tech Founder, Kenya</span></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Finally, an AI platform that understands African contexts and languages. The music lab produces authentic Afrobeat patterns that sound incredible."</p><div class="reviewer"><div class="reviewer-avatar">ST</div><div class="reviewer-info"><h5>Sarah T.</h5><span>Music Producer, Ghana</span></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Our marketing team uses Spudy daily for image generation and copywriting. The quality rivals expensive international tools at a fraction of the cost."</p><div class="reviewer"><div class="reviewer-avatar">JL</div><div class="reviewer-info"><h5>James L.</h5><span>Marketing Director, South Africa</span></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The voice cloning feature helped me create multilingual training content for our staff across 5 countries. Unbelievably realistic output."</p><div class="reviewer"><div class="reviewer-avatar">NO</div><div class="reviewer-info"><h5>Nadia O.</h5><span>HR Director, Egypt</span></div></div></div>
+            <!-- Duplicate for seamless scroll -->
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Spudy transformed my content creation workflow. I can generate professional videos in minutes that used to take days. Truly revolutionary for African creators."</p><div class="reviewer"><div class="reviewer-avatar">AK</div><div class="reviewer-info"><h5>Amina K.</h5><span>Content Creator, Nigeria</span></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The code generation tools are incredibly accurate. As a startup founder in Kenya, Spudy has cut our development time by 60%. Game changer."</p><div class="reviewer"><div class="reviewer-avatar">DM</div><div class="reviewer-info"><h5>David M.</h5><span>Tech Founder, Kenya</span></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Finally, an AI platform that understands African contexts and languages. The music lab produces authentic Afrobeat patterns that sound incredible."</p><div class="reviewer"><div class="reviewer-avatar">ST</div><div class="reviewer-info"><h5>Sarah T.</h5><span>Music Producer, Ghana</span></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Our marketing team uses Spudy daily for image generation and copywriting. The quality rivals expensive international tools at a fraction of the cost."</p><div class="reviewer"><div class="reviewer-avatar">JL</div><div class="reviewer-info"><h5>James L.</h5><span>Marketing Director, South Africa</span></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The voice cloning feature helped me create multilingual training content for our staff across 5 countries. Unbelievably realistic output."</p><div class="reviewer"><div class="reviewer-avatar">NO</div><div class="reviewer-info"><h5>Nadia O.</h5><span>HR Director, Egypt</span></div></div></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="about-content">
+            <div class="about-visual reveal">
+                <div class="about-visual-content">
+                    <div class="about-stat"><div class="about-stat-number">2023</div><div class="about-stat-label">Founded</div></div>
+                    <div class="about-stat"><div class="about-stat-number">50K+</div><div class="about-stat-label">Active Users</div></div>
+                    <div class="about-stat"><div class="about-stat-number">12</div><div class="about-stat-label">Countries</div></div>
+                </div>
+            </div>
+            <div class="about-text reveal reveal-delay-2">
+                <div class="section-tag">About Us</div>
+                <h3>Building Africa's AI Future, One Creation at a Time</h3>
+                <p>Spudy Intelligence was born from a simple belief: Africa deserves world-class AI tools designed with its unique creative landscape in mind. We're not just importing technology — we're building it here, for here.</p>
+                <p>Our team of engineers, researchers, and creatives across 12 African countries work tirelessly to ensure our AI understands local languages, cultural contexts, and the unique creative spirit of the continent.</p>
+                <p>From Lagos to Cairo, Nairobi to Cape Town, Spudy is empowering the next generation of African creators, developers, and entrepreneurs to build without limits.</p>
+                <a class="btn-primary" style="margin-top:1rem;" onclick="openModal('about-detail')">Learn More <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" id="cta">
+        <div class="cta-bg"></div>
+        <h2 class="reveal">Ready to Create Something <span class="gradient-text">Extraordinary?</span></h2>
+        <p class="reveal reveal-delay-1">Join 50,000+ creators across Africa who are already building the future with Spudy.</p>
+        <div class="reveal reveal-delay-2">
+            <a class="btn-primary" style="padding:1.2rem 3rem;font-size:1.1rem;" onclick="openModal('chatbot')">Start Creating Free <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">Spudy.AI</div>
+                <p>The most powerful AI platform in Africa. Create videos, images, music, code & apps instantly.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a onclick="scrollToSection('tools')">AI Tools</a></li>
+                    <li><a onclick="scrollToSection('pricing')">Pricing</a></li>
+                    <li><a onclick="scrollToSection('services')">Services</a></li>
+                    <li><a onclick="openModal('api-docs')">API Docs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a onclick="openModal('about-detail')">About</a></li>
+                    <li><a onclick="openModal('careers')">Careers</a></li>
+                    <li><a onclick="openModal('blog')">Blog</a></li>
+                    <li><a onclick="openModal('contact')">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a onclick="openModal('privacy')">Privacy</a></li>
+                    <li><a onclick="openModal('terms')">Terms</a></li>
+                    <li><a onclick="openModal('security')">Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Spudy Intelligence. All rights reserved. Built for Africa, by Africa.</p>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL CONTAINER ===== -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+        <div class="modal" id="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================================
+        // NAVBAR
+        // ============================================================
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        }
+
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+            // Close mobile menu if open
+            document.getElementById('mobileMenu').classList.remove('open');
+        }
+
+        // ============================================================
+        // PROMPT
+        // ============================================================
+        function setPrompt(text) {
+            const input = document.getElementById('promptInput');
+            input.value = text;
+            input.focus();
+        }
+
+        function handlePrompt() {
+            const input = document.getElementById('promptInput');
+            if (input.value.trim()) {
+                showToast('Generating your creation: "' + input.value + '"...');
+                input.value = '';
+            } else {
+                input.focus();
+                input.style.borderColor = 'var(--accent-warm)';
+                setTimeout(() => { input.style.borderColor = ''; }, 1000);
+            }
+        }
+
+        document.getElementById('promptInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handlePrompt();
+        });
+
+        // ============================================================
+        // TOAST
+        // ============================================================
+        function showToast(message) {
+            // Remove existing toasts
+            document.querySelectorAll('.toast').forEach(t => t.remove());
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            // Trigger show
+            requestAnimationFrame(() => { toast.classList.add('show'); });
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 400);
+            }, 3000);
+        }
+
+        // ============================================================
+        // TOOL HOVER
+        // ============================================================
+        function handleToolHover(e, card) {
+            const rect = card.getBoundingClientRect();
+            card.style.setProperty('--mouse-x', ((e.clientX - rect.left) / rect.width) * 100 + '%');
+            card.style.setProperty('--mouse-y', ((e.clientY - rect.top) / rect.height) * 100 + '%');
+        }
+
+        function resetToolHover(card) {
+            card.style.setProperty('--mouse-x', '50%');
+            card.style.setProperty('--mouse-y', '50%');
+        }
+
+        function openToolModal(name, icon, desc) {
+            const content = document.getElementById('modalContent');
+            content.innerHTML = `
+                <div class="modal-header">
+                    <h2>${icon} ${name}</h2>
+                    <p>${desc}</p>
+                </div>
+                <div style="background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;margin-bottom:1.5rem;">
+                    <div style="font-size:4rem;margin-bottom:1rem;">${icon}</div>
+                    <p style="color:var(--text-secondary);font-size:1rem;">Try ${name} in the Spudy platform. <br>Upgrade to Creator plan for full access.</p>
+                </div>
+                <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+                    <button class="btn-primary" onclick="openModal('signup')">Try for Free</button>
+                    <button class="btn-secondary" onclick="closeModal()">Close</button>
+                </div>
+            `;
+            openModalRaw();
+        }
+
+        // ============================================================
+        // SCROLL REVEAL
+        // ============================================================
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ============================================================
+        // ANIMATED COUNTERS
+        // ============================================================
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let countersAnimated = false;
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersAnimated) {
+                    countersAnimated = true;
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        const duration = 2000;
+                        const start = performance.now();
+
+                        function update(currentTime) {
+                            const elapsed = currentTime - start;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const easeOut = 1 - Math.pow(1 - progress, 3);
+                            const current = Math.floor(easeOut * target);
+                            stat.textContent = current.toLocaleString() + (target === 99 ? '%' : '+');
+                            if (progress < 1) requestAnimationFrame(update);
+                        }
+                        requestAnimationFrame(update);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+        const statsContainer = document.querySelector('.stats');
+        if (statsContainer) statsObserver.observe(statsContainer);
+
+        // ============================================================
+        // PARALLAX ORBS
+        // ============================================================
+        window.addEventListener('mousemove', (e) => {
+            const orbs = document.querySelectorAll('.orb');
+            const x = (e.clientX / window.innerWidth - 0.5) * 30;
+            const y = (e.clientY / window.innerHeight - 0.5) * 30;
+            orbs.forEach((orb, i) => {
+                const factor = (i + 1) * 0.5;
+                orb.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+            });
+        });
+
+        // ============================================================
+        // MODAL SYSTEM
+        // ============================================================
+        const modalOverlay = document.getElementById('modalOverlay');
+        const modalContent = document.getElementById('modalContent');
+        let modalOpen = false;
+
+        function openModalRaw() {
+            modalOverlay.classList.add('active');
+            modalOpen = true;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modalOverlay.classList.remove('active');
+            modalOpen = false;
+            document.body.style.overflow = '';
+        }
+
+        function closeModalOnOverlay(e) {
+            if (e.target === modalOverlay) closeModal();
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modalOpen) closeModal();
+        });
+
+        function openModal(type) {
+            let html = '';
+
+            // ---- CHATBOT ----
+            if (type === 'chatbot') {
+                html = `
+                    <div class="modal-header">
+                        <h2>🤖 Spudy AI Assistant</h2>
+                        <p>Ask me anything about Spudy, our tools, or get help creating content.</p>
+                    </div>
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="chat-message bot">👋 Hello! I'm Spudy, your AI assistant. Welcome to Spudy Intelligence — Africa's most powerful AI platform. I can help you create videos, images, music, code, and more. What would you like to build today?</div>
+                        </div>
+                        <div class="chat-input-area">
+                            <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter')sendChatMessage()">
+                            <button class="chat-send-btn" onclick="sendChatMessage()">Send</button>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // ---- AI SUITE ----
+            if (type === 'ai-suite') {
+                html = `
+                    <div class="modal-header">
+                        <h2>🤖 Spudy AI Suite</h2>
+                        <p>Enterprise-grade AI tools tailored for African businesses.</p>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;">
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:1.5rem;">
+                            <h4 style="font-family:'Space Grotesk';margin-bottom:.8rem;color:var(--accent-gold);">📝 Content Automation</h4>
+                            <p style="color:var(--text-secondary);font-size:.9rem;line-height:1.7;">Automatically generate blog posts, social media content, and marketing materials in English, French, Swahili, Arabic, and 10+ African languages. Schedule and publish directly to your platforms.</p>
+                        </div>
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:1.5rem;">
+                            <h4 style="font-family:'Space Grotesk';margin-bottom:.8rem;color:var(--accent-teal);">📊 Business Intelligence</h4>
+                            <p style="color:var(--text-secondary);font-size:.9rem;line-height:1.7;">Upload your sales data, customer feedback, or market research. Our AI analyzes trends, predicts outcomes, and generates actionable reports with beautiful visualizations.</p>
+                        </div>
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:1.5rem;">
+                            <h4 style="font-family:'Space Grotesk';margin-bottom:.8rem;color:var(--accent-purple);">🤖 Workflow Automation</h4>
+                            <p style="color:var(--text-secondary);font-size:.9rem;line-height:1.7;">Connect your existing tools and automate repetitive tasks. From invoice processing to customer onboarding, Spudy AI Suite handles the busywork so your team can focus on growth.</p>
+                        </div>
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:1.5rem;">
+                            <h4 style="font-family:'Space Grotesk';margin-bottom:.8rem;color:var(--accent-warm);">🔒 Enterprise Security</h4>
+                            <p style="color:var(--text-secondary);font-size:.9rem;line-height:1.7;">SOC 2 compliant with end-to-end encryption. Your data never leaves African servers. Full audit logs, role-based access, and SSO integration included.</p>
+                        </div>
+                    </div>
+                    <div style="margin-top:2rem;text-align:center;">
+                        <button class="btn-primary" onclick="openModal('signup')">Get Started with AI Suite</button>
+                    </div>
+                `;
+            }
+
+            // ---- LIBRARY ----
+            if (type === 'library') {
+                html = `
+                    <div class="modal-header">
+                        <h2>📚 Spudy Library</h2>
+                        <p>Millions of AI-generated assets at your fingertips.</p>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem;">
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-align:center;transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='var(--accent-gold)'" onmouseout="this.style.borderColor='var(--border)'">
+                            <div style="font-size:2.5rem;margin-bottom:.5rem;">🎨</div>
+                            <h5 style="font-family:'Space Grotesk';margin-bottom:.3rem;">Design Templates</h5>
+                            <p style="font-size:.8rem;color:var(--text-secondary);">10,000+ templates</p>
+                        </div>
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-align:center;transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='var(--accent-teal)'" onmouseout="this.style.borderColor='var(--border)'">
+                            <div style="font-size:2.5rem;margin-bottom:.5rem;">💻</div>
+                            <h5 style="font-family:'Space Grotesk';margin-bottom:.3rem;">Code Snippets</h5>
+                            <p style="font-size:.8rem;color:var(--text-secondary);">50,000+ snippets</p>
+                        </div>
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-align:center;transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='var(--accent-purple)'" onmouseout="this.style.borderColor='var(--border)'">
+                            <div style="font-size:2.5rem;margin-bottom:.5rem;">🎵</div>
+                            <h5 style="font-family:'Space Grotesk';margin-bottom:.3rem;">Audio Samples</h5>
+                            <p style="font-size:.8rem;color:var(--text-secondary);">5,000+ samples</p>
+                        </div>
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-align:center;transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='var(--accent-warm)'" onmouseout="this.style.borderColor='var(--border)'">
+                            <div style="font-size:2.5rem;margin-bottom:.5rem;">🎬</div>
+                            <h5 style="font-family:'Space Grotesk';margin-bottom:.3rem;">Video Presets</h5>
+                            <p style="font-size:.8rem;color:var(--text-secondary);">2,000+ presets</p>
+                        </div>
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-align:center;transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='var(--accent-gold)'" onmouseout="this.style.borderColor='var(--border)'">
+                            <div style="font-size:2.5rem;margin-bottom:.5rem;">📊</div>
+                            <h5 style="font-family:'Space Grotesk';margin-bottom:.3rem;">Data Models</h5>
+                            <p style="font-size:.8rem;color:var(--text-secondary);">500+ models</p>
+                        </div>
+                        <div style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-align:center;transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='var(--accent-teal)'" onmouseout="this.style.borderColor='var(--border)'">
+                            <div style="font-size:2.5rem;margin-bottom:.5rem;">📝</div>
+                            <h5 style="font-family:'Space Grotesk';margin-bottom:.3rem;">Copy Templates</h5>
+                            <p style="font-size:.8rem;color:var(--text-secondary);">15,000+ templates</p>
+                        </div>
+                    </div>
+                    <div style="text-align:center;">
+                        <button class="btn-primary" onclick="openModal('signup')">Explore the Library</button>
+                    </div>
+                `;
+            }
+
+            // ---- GAMES ----
+            if (type === 'games') {
+                html = `
+                    <div class="modal-header">
+                        <h2>🎮 Spudy Games</h2>
+                        <p>AI-powered gaming experiences. Play now!</p>
+                    </div>
+                    <div style="display:flex;gap:1rem;justify-content:center;margin-bottom:1.5rem;flex-wrap:wrap;">
+                        <button class="game-btn primary" id="tttBtn" onclick="switchGame('ttt')">Tic Tac Toe</button>
+                        <button class="game-btn" id="memBtn" onclick="switchGame('memory')">Memory Match</button>
+                    </div>
+                    <div id="gameArea"></div>
+                `;
+                // We'll render the game after modal opens
+                modalContent.innerHTML = html;
+                openModalRaw();
+                // Initialize game after DOM update
+                setTimeout(() => { switchGame('ttt'); }, 50);
+                return;
+            }
+
+            // ---- SIGNUP ----
+            if (type === 'signup') {
+                html = `
+                    <div class="modal-header">
+                        <h2>🚀 Create Your Account</h2>
+                        <p>Join 50,000+ creators across Africa.</p>
+                    </div>
+                    <form class="contact-form" onsubmit="event.preventDefault();handleSignup();">
+                        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Enter your full name" required></div>
+                        <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@example.com" required></div>
+                        <div class="form-group"><label>Password</label><input type="password" placeholder="Create a strong password" required></div>
+                        <div class="form-group"><label>Country</label><select required><option value="">Select your country</option><option>Nigeria</option><option>Kenya</option><option>South Africa</option><option>Ghana</option><option>Egypt</option><option>Ethiopia</option><option>Tanzania</option><option>Uganda</option><option>Algeria</option><option>Morocco</option><option>Other</option></select></div>
+                        <div class="form-group"><label>What will you create?</label><select><option>Content Creation</option><option>Software Development</option><option>Music Production</option><option>Business Analytics</option><option>Education</option><option>Other</option></select></div>
+                        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Create Free Account</button>
+                        <p style="text-align:center;color:var(--text-secondary);font-size:.85rem;margin-top:1rem;">Already have an account? <a style="color:var(--accent-teal);cursor:pointer;" onclick="showToast('Login feature coming soon!')">Sign In</a></p>
+                    </form>
+                `;
+            }
+
+            // ---- CONTACT ----
+            if (type === 'contact') {
+                html = `
+                    <div class="modal-header">
+                        <h2>📧 Contact Sales</h2>
+                        <p>Our team will get back to you within 24 hours.</p>
+                    </div>
+                    <form class="contact-form" onsubmit="event.preventDefault();handleContact();">
+                        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name" required></div>
+                        <div class="form-group"><label>Work Email</label><input type="email" placeholder="work@company.com" required></div>
+                        <div class="form-group"><label>Company Name</label><input type="text" placeholder="Your company" required></div>
+                        <div class="form-group"><label>Company Size</label><select><option>1-10 employees</option><option>11-50 employees</option><option>51-200 employees</option><option>200+ employees</option></select></div>
+                        <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your needs..."></textarea></div>
+                        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+                    </form>
+                `;
+            }
+
+            // ---- API DOCS ----
+            if (type === 'api-docs') {
+                html = `
+                    <div class="modal-header">
+                        <h2>⚡ API Documentation</h2>
+                        <p>Integrate Spudy AI into your applications.</p>
+                    </div>
+                    <div class="api-section">
+                        <h4>Authentication</h4>
+                        <div class="code-block">curl -X POST <span class="string">"https://api.spudy.ai/v1/auth"</span> \\\n  -H <span class="string">"Content-Type: application/json"</span> \\\n  -d '{<span class="string">"api_key"</span>:<span class="string">"your_api_key_here"</span>}'</div>
+                    </div>
+                    <div class="api-section">
+                        <h4>Generate Image</h4>
+                        <div class="code-block"><span class="keyword">const</span> response = <span class="keyword">await</span> fetch(<span class="string">'https://api.spudy.ai/v1/generate/image'</span>, {\n  <span class="function">method</span>: <span class="string">'POST'</span>,\n  <span class="function">headers</span>: { <span class="string">'Authorization'</span>: <span class="string">'Bearer YOUR_TOKEN'</span> },\n  <span class="function">body</span>: JSON.stringify({\n    <span class="string">"prompt"</span>: <span class="string">"African sunset over the savanna"</span>,\n    <span class="string">"style"</span>: <span class="string">"photorealistic"</span>,\n    <span class="string">"size"</span>: <span class="string">"1024x1024"</span>\n  })\n});\n<span class="keyword">const</span> image = <span class="keyword">await</span> response.json();</div>
+                    </div>
+                    <div class="api-section">
+                        <h4>Generate Code</h4>
+                        <div class="code-block"><span class="keyword">import</span> spudy\n\nclient = spudy.Client(api_key=<span class="string">"your_key"</span>)\n\ncode = client.code.generate(\n    prompt=<span class="string">"Build a React dashboard with charts"</span>,\n    language=<span class="string">"javascript"</span>,\n    framework=<span class="string">"react"</span>\n)\n\n<span class="comment"># Returns complete, runnable code</span></div>
+                    </div>
+                    <div style="text-align:center;margin-top:2rem;">
+                        <button class="btn-primary" onclick="openModal('signup')">Get API Key</button>
+                    </div>
+                `;
+            }
+
+            // ---- ABOUT DETAIL ----
+            if (type === 'about-detail') {
+                html = `
+                    <div class="modal-header">
+                        <h2>🌍 About Spudy Intelligence</h2>
+                        <p>The story behind Africa's most powerful AI platform.</p>
+                    </div>
+                    <div style="line-height:1.8;color:var(--text-secondary);">
+                        <p style="margin-bottom:1.5rem;"><strong style="color:var(--text-primary);">Founded in 2023</strong> in Lagos, Nigeria, Spudy Intelligence emerged from a frustration shared by African creators: world-class AI tools existed, but none truly understood our languages, our cultures, our contexts.</p>
+                        <p style="margin-bottom:1.5rem;">Our founding team — engineers from Nigeria, Kenya, Ghana, and South Africa — set out to build something different. Not an AI platform imported from Silicon Valley and localized, but one built from the ground up with African creativity at its core.</p>
+                        <p style="margin-bottom:1.5rem;">Today, Spudy serves <strong style="color:var(--accent-gold);">50,000+ users</strong> across <strong style="color:var(--accent-teal);">12 African countries</strong>. Our models are trained on African languages, art, music, and business contexts. We understand that "jollof" is more than a food — it's culture. That "Ubuntu" isn't just a Linux distro — it's a philosophy.</p>
+                        <h4 style="font-family:'Space Grotesk';color:var(--text-primary);margin:2rem 0 1rem;">Our Mission</h4>
+                        <p style="margin-bottom:1.5rem;">To democratize AI for every African creator, developer, and entrepreneur. We believe that when Africa has access to the same creative tools as the rest of the world, the continent's innovation will be unstoppable.</p>
+                        <h4 style="font-family:'Space Grotesk';color:var(--text-primary);margin:2rem 0 1rem;">Our Team</h4>
+                        <p>80+ engineers, researchers, designers, and creatives working remotely from Lagos, Nairobi, Accra, Cape Town, Cairo, and beyond. We hire the best talent on the continent and give them the freedom to build.</p>
+                    </div>
+                    <div style="text-align:center;margin-top:2rem;">
+                        <button class="btn-primary" onclick="openModal('careers')">Join Our Team</button>
+                    </div>
+                `;
+            }
+
+            // ---- CAREERS ----
+            if (type === 'careers') {
+                html = `
+                    <div class="modal-header">
+                        <h2>💼 Careers at Spudy</h2>
+                        <p>Build the future of AI in Africa with us.</p>
+                    </div>
+                    <div class="career-list">
+                        <div class="career-item" onclick="showToast('Application form coming soon!')">
+                            <div class="career-item-info"><h4>Senior ML Engineer</h4><p>Train and optimize large language models for African languages.</p></div>
+                            <div class="career-item-tags"><span class="career-tag">Remote</span><span class="career-tag">Full-time</span></div>
+                        </div>
+                        <div class="career-item" onclick="showToast('Application form coming soon!')">
+                            <div class="career-item-info"><h4>Product Designer</h4><p>Design intuitive interfaces for AI-powered creative tools.</p></div>
+                            <div class="career-item-tags"><span class="career-tag">Lagos</span><span class="career-tag">Full-time</span></div>
+                        </div>
+                        <div class="career-item" onclick="showToast('Application form coming soon!')">
+                            <div class="career-item-info"><h4>DevOps Engineer</h4><p>Scale our infrastructure across 12 African data centers.</p></div>
+                            <div class="career-item-tags"><span class="career-tag">Remote</span><span class="career-tag">Full-time</span></div>
+                        </div>
+                        <div class="career-item" onclick="showToast('Application form coming soon!')">
+                            <div class="career-item-info"><h4>Content Strategist</h4><p>Build our brand voice and educate the African market on AI.</p></div>
+                            <div class="career-item-tags"><span class="career-tag">Nairobi</span><span class="career-tag">Full-time</span></div>
+                        </div>
+                        <div class="career-item" onclick="showToast('Application form coming soon!')">
+                            <div class="career-item-info"><h4>AI Research Intern</h4><p>Contribute to cutting-edge research in multilingual NLP.</p></div>
+                            <div class="career-item-tags"><span class="career-tag">Remote</span><span class="career-tag">Internship</span></div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // ---- BLOG ----
+            if (type === 'blog') {
+                html = `
+                    <div class="modal-header">
+                        <h2>📝 Spudy Blog</h2>
+                        <p>Insights, tutorials, and stories from the Spudy team.</p>
+                    </div>
+                    <div class="blog-grid">
+                        <div class="blog-card" onclick="showToast('Full article coming soon!')">
+                            <div class="blog-card-img">🎨</div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-tag">Tutorial</div>
+                                <h4>How to Generate Professional Logos with Spudy AI</h4>
+                                <p>Learn how to create stunning brand identities in under 5 minutes using our Logo Maker tool. Perfect for startups and small businesses.</p>
+                                <div class="blog-card-meta"><span>Jan 15, 2026</span><span>5 min read</span></div>
+                            </div>
+                        </div>
+                        <div class="blog-card" onclick="showToast('Full article coming soon!')">
+                            <div class="blog-card-img">🎵</div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-tag">Music</div>
+                                <h4>AI Music Production: The Future of Afrobeat</h4>
+                                <p>How Spudy's Music Lab is helping producers create authentic African sounds with the power of AI.</p>
+                                <div class="blog-card-meta"><span>Jan 10, 2026</span><span>7 min read</span></div>
+                            </div>
+                        </div>
+                        <div class="blog-card" onclick="showToast('Full article coming soon!')">
+                            <div class="blog-card-img">💻</div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-tag">Development</div>
+                                <h4>Building African Apps 10x Faster with Code Pilot</h4>
+                                <p>How our AI-powered coding assistant helps developers across the continent ship products faster.</p>
+                                <div class="blog-card-meta"><span>Jan 5, 2026</span><span>6 min read</span></div>
+                            </div>
+                        </div>
+                        <div class="blog-card" onclick="showToast('Full article coming soon!')">
+                            <div class="blog-card-img">🌍</div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-tag">Community</div>
+                                <h4>Spudy's 2026 Vision: AI for Every African</h4>
+                                <p>Our roadmap for expanding AI access across the continent and empowering the next generation of creators.</p>
+                                <div class="blog-card-meta"><span>Dec 20, 2025</span><span>8 min read</span></div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // ---- PRIVACY / TERMS / SECURITY (placeholder) ----
+            if (type === 'privacy' || type === 'terms' || type === 'security') {
+                const titles = {
+                    privacy: '🔒 Privacy Policy',
+                    terms: '📜 Terms of Service',
+                    security: '🛡️ Security'
+                };
+                html = `
+                    <div class="modal-header">
+                        <h2>${titles[type] || 'Legal'}</h2>
+                        <p>We take your data and security seriously.</p>
+                    </div>
+                    <div style="color:var(--text-secondary);line-height:1.8;">
+                        <p>This is a placeholder for the ${type} page. In a production environment, this would contain the full legal document.</p>
+                        <p style="margin-top:1rem;">For now, rest assured that Spudy Intelligence is committed to protecting your privacy and data security.</p>
+                    </div>
+                `;
+            }
+
+            modalContent.innerHTML = html;
+            openModalRaw();
+
+            // If chatbot, focus input after a moment
+            if (type === 'chatbot') {
+                setTimeout(() => {
+                    const inp = document.getElementById('chatInput');
+                    if (inp) inp.focus();
+                }, 300);
+            }
+        }
+
+        // ============================================================
+        // CHATBOT
+        // ============================================================
+        function sendChatMessage() {
+            const input = document.getElementById('chatInput');
+            const messages = document.getElementById('chatMessages');
+            if (!input || !messages) return;
+            const text = input.value.trim();
+            if (!text) return;
+
+            // Add user message
+            const userDiv = document.createElement('div');
+            userDiv.className = 'chat-message user';
+            userDiv.textContent = text;
+            messages.appendChild(userDiv);
+            input.value = '';
+            messages.scrollTop = messages.scrollHeight;
+
+            // Simulate bot response
+            setTimeout(() => {
+                const botDiv = document.createElement('div');
+                botDiv.className = 'chat-message bot';
+                const responses = [
+                    "That's a great idea! I can help you with that. Would you like to use our Video Generator or Image Studio?",
+                    "Interesting! Spudy has powerful tools for that. Let me guide you through the options.",
+                    "I love where you're going with this! Our AI Suite has exactly what you need. Shall I show you the Creator plan?",
+                    "You're thinking big! Spudy's App Forge can help you build that. Want to see a demo?",
+                    "That's a fantastic use case! Our Content Writer and Voice Clone tools would be perfect for this."
+                ];
+                botDiv.textContent = responses[Math.floor(Math.random() * responses.length)];
+                messages.appendChild(botDiv);
+                messages.scrollTop = messages.scrollHeight;
+            }, 600 + Math.random() * 600);
+        }
+
+        // ============================================================
+        // GAMES
+        // ============================================================
+        let currentGame = 'ttt';
+        let gameState = {};
+
+        function switchGame(game) {
+            currentGame = game;
+            document.querySelectorAll('.game-btn').forEach(b => b.classList.remove('primary'));
+            if (game === 'ttt') {
+                document.getElementById('tttBtn').classList.add('primary');
+                renderTicTacToe();
+            } else {
+                document.getElementById('memBtn').classList.add('primary');
+                renderMemoryMatch();
+            }
+        }
+
+        // ---- TIC TAC TOE ----
+        function renderTicTacToe() {
+            const area = document.getElementById('gameArea');
+            if (!area) return;
+            if (!gameState.ttt) {
+                gameState.ttt = { board: Array(9).fill(null), turn: 'X', winner: null };
+            }
+            const state = gameState.ttt;
+            let html = `<div class="game-status">${state.winner ? (state.winner === 'draw' ? "It's a draw!" : `${state.winner} wins! 🎉`) : `Turn: ${state.turn}`}</div>`;
+            html += `<div class="game-board">`;
+            for (let i = 0; i < 9; i++) {
+                const val = state.board[i] || '';
+                const click = !state.winner && !val ? `onclick="tttMove(${i})"` : '';
+                html += `<div class="game-cell" ${click}>${val}</div>`;
+            }
+            html += `</div>`;
+            html += `<button class="game-reset" onclick="tttReset()">🔄 New Game</button>`;
+            area.innerHTML = html;
+        }
+
+        function tttMove(index) {
+            const state = gameState.ttt;
+            if (state.board[index] || state.winner) return;
+            state.board[index] = state.turn;
+            state.winner = tttCheckWinner(state.board);
+            if (!state.winner) state.turn = state.turn === 'X' ? 'O' : 'X';
+            renderTicTacToe();
+        }
+
+        function tttCheckWinner(board) {
+            const lines = [
+                [0, 1, 2],
+                [3, 4, 5],
+                [6, 7, 8],
+                [0, 3, 6],
+                [1, 4, 7],
+                [2, 5, 8],
+                [0, 4, 8],
+                [2, 4, 6]
+            ];
+            for (const [a, b, c] of lines) {
+                if (board[a] && board[a] === board[b] && board[a] === board[c]) return board[a];
+            }
+            if (board.every(c => c)) return 'draw';
+            return null;
+        }
+
+        function tttReset() {
+            gameState.ttt = { board: Array(9).fill(null), turn: 'X', winner: null };
+            renderTicTacToe();
+        }
+
+        // ---- MEMORY MATCH ----
+        let memoryCards = [];
+        let memoryFlipped = [];
+        let memoryMatched = [];
+        let memoryLocked = false;
+
+        function renderMemoryMatch() {
+            const area = document.getElementById('gameArea');
+            if (!area) return;
+            if (memoryCards.length === 0) {
+                const emojis = ['🐘', '🦁', '🦒', '🦛', '🐆', '🐒', '🦅', '🐊'];
+                const deck = [...emojis, ...emojis];
+                for (let i = deck.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [deck[i], deck[j]] = [deck[j], deck[i]];
+                }
+                memoryCards = deck;
+                memoryFlipped = [];
+                memoryMatched = [];
+                memoryLocked = false;
+            }
+
+            let html = `<div class="game-status">${memoryMatched.length === memoryCards.length ? '🎉 You matched them all!' : `Matched: ${memoryMatched.length / 2} / ${memoryCards.length / 2}`}</div>`;
+            html += `<div class="memory-grid">`;
+            for (let i = 0; i < memoryCards.length; i++) {
+                const isFlipped = memoryFlipped.includes(i) || memoryMatched.includes(i);
+                const isMatched = memoryMatched.includes(i);
+                html += `<div class="memory-card ${isFlipped ? 'flipped' : ''} ${isMatched ? 'matched' : ''}" onclick="${!isMatched && !memoryLocked ? `memoryFlip(${i})` : ''}">${isFlipped ? memoryCards[i] : '❓'}</div>`;
+            }
+            html += `</div>`;
+            html += `<button class="game-reset" onclick="memoryReset()">🔄 New Game</button>`;
+            area.innerHTML = html;
+        }
+
+        function memoryFlip(index) {
+            if (memoryLocked) return;
+            if (memoryFlipped.includes(index) || memoryMatched.includes(index)) return;
+            if (memoryFlipped.length >= 2) return;
+
+            memoryFlipped.push(index);
+            renderMemoryMatch();
+
+            if (memoryFlipped.length === 2) {
+                memoryLocked = true;
+                const [i1, i2] = memoryFlipped;
+                if (memoryCards[i1] === memoryCards[i2]) {
+                    memoryMatched.push(i1, i2);
+                    memoryFlipped = [];
+                    memoryLocked = false;
+                    renderMemoryMatch();
+                } else {
+                    setTimeout(() => {
+                        memoryFlipped = [];
+                        memoryLocked = false;
+                        renderMemoryMatch();
+                    }, 800);
+                }
+            }
+        }
+
+        function memoryReset() {
+            memoryCards = [];
+            memoryFlipped = [];
+            memoryMatched = [];
+            memoryLocked = false;
+            renderMemoryMatch();
+        }
+
+        // ============================================================
+        // FORM HANDLERS
+        // ============================================================
+        function handleSignup() {
+            showToast('🎉 Account created! Check your email to verify.');
+            closeModal();
+        }
+
+        function handleContact() {
+            showToast('📧 Message sent! Our team will reach out within 24 hours.');
+            closeModal();
+        }
+
+        // ============================================================
+        // INIT: render games if modal is already open with games
+        // ============================================================
+        // (handled inside openModal for 'games')
+        console.log('🚀 Spudy Intelligence loaded successfully.');
+        console.log('🌍 Built for Africa, by Africa.');
+    </script>
+
+</body>
+</html>
